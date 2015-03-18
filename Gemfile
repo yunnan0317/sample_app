@@ -6,11 +6,14 @@ gem 'rails', '4.2.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+
+  gem 'growl'
 end
 
 gem 'sass-rails', '~> 5.0'
@@ -23,8 +26,3 @@ gem 'jbuilder', '~> 2.0'
 group :doc do
   gem 'sdoc', '~> 0.4.0', group: :doc
 end
-
-#group :doc do
-#gem 'pg'
-#end
-
