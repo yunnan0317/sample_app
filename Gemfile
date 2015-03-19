@@ -2,9 +2,8 @@ source 'https://ruby.taobao.org'
 ruby '2.1.4'
 
 gem 'rails', '4.2.0'
-
+gem 'pg'
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'guard-rspec'
 end
