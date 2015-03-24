@@ -1,11 +1,18 @@
+# -*- coding: utf-8 -*-
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  get 'user/new'
+  match '/signup', to: 'user#new', via: 'get'
+  #get 'static_pages/home' #一般路由
+  root  to: 'static_pages#home' #具名路由
 
-  get 'static_pages/help'
+  #get 'static_pages/help'
+  match '/help', to: 'static_pages#help', via: 'get'
 
-  get 'static_pages/about'
+  #get 'static_pages/about'
+  match '/about', to: 'static_pages#about', via: 'get'
 
-  get 'static_pages/contact'
+  #get 'static_pages/contact'
+  match '/contact', to: 'static_pages#contact', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
